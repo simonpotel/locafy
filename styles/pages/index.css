@@ -1,4 +1,18 @@
+main {
+  display: grid;
+  grid-template-columns: 1.6fr 0.4fr;
+  grid-gap: 20px;
+}
+
 main h1 {
+  color: var(--primary-color);
+}
+
+main img {
+  width: 250px;
+}
+
+span.highlight {
   color: var(--primary-color);
 }
 
@@ -17,16 +31,6 @@ main button:hover {
   background-color: var(--third-color);
 }
 
-main img {
-  width: 250px;
-}
-
-main {
-  display: grid;
-  grid-template-columns: 1.6fr 0.4fr;
-  grid-gap: 20px;
-}
-
 @media (max-width: 470px) {
   main {
     grid-template-columns: 1fr;
@@ -36,6 +40,4 @@ main {
   }
 }
 
-span.highlight {
-  color: var(--primary-color);
-}
+
