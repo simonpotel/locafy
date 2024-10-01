@@ -50,8 +50,6 @@ header a {
   margin-left: 2vw;
 }
 
-
-
 .dropdown {
   position: relative;
   display: inline-block;
@@ -76,6 +74,11 @@ header a {
   z-index: 1;
 }
 
+.dropdown-content a:hover {
+  background-color: var(--second-color);
+  color: white;
+}
+
 .dropdown-content a {
   color: black;
   padding: 12px 16px;
@@ -85,3 +88,4 @@ header a {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+

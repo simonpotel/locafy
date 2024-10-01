@@ -1,3 +1,42 @@
-h1 {
-    color: var(--primary-color)
+main h1 {
+  color: var(--primary-color);
 }
+
+main button {
+  border: none;
+  color: white;
+  background-color: var(--second-color);
+  border-radius: 15px;
+  text-align: center;
+  height: 40px;
+  width: 120px;
+  font-size: 800;
+}
+
+main button:hover {
+  background-color: var(--third-color);
+}
+
+main img {
+  width: 250px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1.6fr 0.4fr;
+  grid-gap: 20px;
+}
+
+@media (max-width: 470px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+  main div:last-child {
+    grid-row: 1;
+  }
+}
+
+span.highlight{
+  color:var(--primary-color);
+}
+
