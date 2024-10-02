@@ -16,21 +16,6 @@ span.highlight {
   color: var(--primary-color);
 }
 
-#landing button {
-  border: none;
-  color: white;
-  background-color: var(--second-color);
-  border-radius: 15px;
-  text-align: center;
-  height: 40px;
-  width: 120px;
-  font-size: 800;
-}
-
-#landing button:hover {
-  background-color: var(--third-color);
-}
-
 @media (max-width: 470px) {
   #landing {
     grid-template-columns: 1fr;

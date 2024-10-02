@@ -7,6 +7,7 @@
   --primary-color: #2c6951;
   --second-color: #246ed6;
   --third-color: #1f58a7;
+  --fourth-color: #40a77e;
 }
 
 header {
@@ -87,4 +88,19 @@ header a {
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+main button {
+  border: none;
+  color: white;
+  background-color: var(--second-color);
+  border-radius: 15px;
+  text-align: center;
+  height: 40px;
+  width: 120px;
+  font-size: 800;
+}
+
+main button:hover {
+  background-color: var(--third-color);
 }
