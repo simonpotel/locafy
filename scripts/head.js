@@ -1,4 +1,7 @@
-document.addEventListener("DOMContentLoaded", function () {
+// check désactivé car sinon la page attend d'être load pour faire cette partie de code
+// et cela écrase les css uniques à chaques pages avec le common
+
+//document.addEventListener("DOMContentLoaded", function () {
   let metaCharset = document.createElement("meta");
   metaCharset.setAttribute("charset", "UTF-8");
   document.head.appendChild(metaCharset);
@@ -25,4 +28,4 @@ document.addEventListener("DOMContentLoaded", function () {
   fontAwesome.href =
     "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css";
   document.head.appendChild(fontAwesome);
-});
+//});
