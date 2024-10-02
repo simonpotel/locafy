@@ -40,3 +40,21 @@ main button:hover {
     grid-row: 1;
   }
 }
+
+@media (min-width: 850px) {
+  main img{
+    width: 30vw;
+    max-width: 300px;
+  }
+  main h1 {
+    background-color: red;
+    max-width: 40px;
+    max-height: 40px;
+  }
+}
+
+@media (min-width: 850px) {
+  main img{
+    margin-right:15vw;
+  }
+}
