@@ -1,15 +1,14 @@
 main {
   margin-top: 50px;
+}
+
+#landing {
   display: grid;
   grid-template-columns: 1.6fr 0.4fr;
   grid-gap: 20px;
 }
 
-main h1 {
-  color: var(--primary-color);
-}
-
-main img {
+#landing img {
   width: 200px;
 }
 
@@ -17,7 +16,7 @@ span.highlight {
   color: var(--primary-color);
 }
 
-main button {
+#landing button {
   border: none;
   color: white;
   background-color: var(--second-color);
@@ -28,28 +27,28 @@ main button {
   font-size: 800;
 }
 
-main button:hover {
+#landing button:hover {
   background-color: var(--third-color);
 }
 
 @media (max-width: 470px) {
-  main {
+  #landing {
     grid-template-columns: 1fr;
   }
-  main div:last-child {
+  #landing div:last-child {
     grid-row: 1;
   }
 }
 
 @media (min-width: 850px) {
-  main div:first-child{
+  #landing div:first-child {
     margin-top: 30px;
   }
-  main img{
+  #landing img {
     width: 30vw;
     max-width: 300px;
   }
-  main h1 {
+  #landing h1 {
     background-color: red;
     max-width: 40px;
     max-height: 40px;
@@ -57,7 +56,7 @@ main button:hover {
 }
 
 @media (min-width: 850px) {
-  main img{
-    margin-right:15vw;
+  #landing img {
+    margin-right: 15vw;
   }
 }
