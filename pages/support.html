@@ -1,15 +1,125 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>locafy</title>
     <script src="/scripts/head.js"></script>
     <script src="/scripts/header.js"></script>
+    <link rel="stylesheet" href="/styles/pages/support.css" />
   </head>
 
   <body>
     <header></header>
     <main>
       <h1>Support Page</h1>
+      <div>
+        <h2>Contact</h2>
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input
+            name="access_key"
+            type="hidden"
+            value="50a489ee-bab9-4627-804c-460084e8b962"
+          />
+          <input name="subject" type="hidden" value="Portfolio Alert" />
+          <input name="from_name" type="hidden" value="Portfolio" />
+          <div id="inputs">
+            <div class="contact-inputs">
+              <label class="form-label" for="nom">Nom</label>
+              <input
+                aria-label="Input pour votre nom."
+                class="form-input"
+                id="nom"
+                name="nom"
+                required
+                type="text"
+              />
+            </div>
+            <div class="contact-inputs">
+              <label class="form-label" for="prenom">Prénom</label>
+              <input
+                aria-label="Input pour votre prénom."
+                class="form-input"
+                id="prenom"
+                name="prenom"
+                required
+                type="text"
+              />
+            </div>
+
+            <div class="contact-inputs">
+              <label class="form-label" for="email">Email</label>
+              <input
+                aria-label="Input pour l'email."
+                class="form-input"
+                id="email"
+                name="email"
+                required
+                type="email"
+              />
+            </div>
+            <div class="contact-inputs">
+              <label class="form-label" for="phone">Téléphone</label>
+              <input
+                aria-label="Input pour le numéro de téléphone."
+                class="form-input"
+                id="phone"
+                name="téléphone"
+                type="tel"
+              />
+            </div>
+
+            <div class="contact-inputs">
+              <label class="form-label" for="message">Message</label>
+              <textarea
+                aria-label="Input pour le contenu du message."
+                class="form-textarea"
+                id="message"
+                name="message"
+              ></textarea>
+            </div>
+
+            <div class="contact-inputs">
+              <label for="recontact">J'accepte d'être recontacté</label>
+              <input
+                aria-label="Checkbox si vous voulez être recontacté."
+                class="recontact"
+                id="recontact"
+                name="recontact"
+                type="checkbox"
+                value="La personne veut être recontactée"
+                checked
+              />
+            </div>
+
+            <div>
+              <p>Comment dois-je vous recontacter ?</p>
+              <input
+                aria-label="Radio si vous voulez être recontacté par email."
+                id="recontactChoixEmail"
+                name="contactChoice"
+                type="radio"
+                value="email"
+                checked
+              />
+              <label for="recontactChoixEmail">Email</label>
+
+              <input
+                aria-label="Radio si vous voulez être recontacté par téléphone."
+                id="recontactChoixTelephone"
+                name="contactChoice"
+                type="radio"
+                value="telephone"
+              />
+              <label for="recontactChoixTelephone">Téléphone</label>
+            </div>
+
+            <div class="contact-inputs">
+              <button type="submit">Envoyer</button>
+            </div>
+          </div>
+        </form>
+      </div>
     </main>
     <footer></footer>
   </body>
