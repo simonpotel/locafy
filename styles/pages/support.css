@@ -1,7 +1,7 @@
 div > h1,
 h3 {
   display: flex;
-  justify-content: center;;
+  justify-content: center;
 }
 
 #inputs {
@@ -61,12 +61,19 @@ form {
 
 @media (max-width: 450px) {
   #message {
-    width: 70vw;
+    width: 72vw;
   }
   #nom,
   #prenom,
   #email,
   #telephone {
     width: 55vw;
+  }
+}
+
+@media (max-width: 495px) {
+  /* solution temporaire car le responsive du h3 ne fonctionne pas bien */ 
+  div > h3 {
+    display: none;
   }
 }
