@@ -1,3 +1,9 @@
+div > h1,
+h2 {
+  display: flex;
+  justify-content: center;
+}
+
 h1 {
   color: var(--primary-color);
 }
@@ -21,11 +27,16 @@ h2 {
 #email,
 #telephone {
   width: 250px;
+  margin-bottom: 5px;
 }
 
 #checkbox-recontact {
   display: flex;
   flex-direction: row;
+}
+
+form .form-label {
+  color: var(--second-color);
 }
 
 #message {
@@ -45,17 +56,14 @@ form {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-
 @media (max-width: 450px) {
-    #message {
-        width: 70vw;
-    }
-    #nom,
-    #prenom,
-    #email,
-    #telephone {
+  #message {
+    width: 70vw;
+  }
+  #nom,
+  #prenom,
+  #email,
+  #telephone {
     width: 55vw;
-    }
+  }
 }
-
-
