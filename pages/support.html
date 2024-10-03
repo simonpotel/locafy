@@ -14,7 +14,8 @@
     <main>
       <div>
         <h1>Support</h1>
-        <h2>Contactez nous !</h2>
+        <h3>Renseignez vos coordonnées pour être recontacté</h3>
+        <h3>par notre équipe !</h3>
       </div>
       <div>
         <form action="https://api.web3forms.com/submit" method="POST">
@@ -36,6 +37,7 @@
                   name="nom"
                   required
                   type="text"
+                  placeholder="LEFEBVRE"
                 />
               </div>
               <div class="contact-inputs">
@@ -47,10 +49,10 @@
                   name="prenom"
                   required
                   type="text"
+                  placeholder="Lily"
                 />
               </div>
             </div>
-
 
             <div class="contact-inputs">
               <label class="form-label" for="email">Email</label>
@@ -61,6 +63,7 @@
                 name="email"
                 required
                 type="email"
+                placeholder="lefebvre.lily@example.com"
               />
             </div>
             <div class="contact-inputs">
@@ -71,6 +74,7 @@
                 id="telephone"
                 name="téléphone"
                 type="tel"
+                placeholder="06 XX XX XX XX"
               />
             </div>
 
@@ -81,25 +85,14 @@
                 class="form-textarea"
                 id="message"
                 name="message"
+                placeholder="Je vous contact au sujet du bien ..."
               ></textarea>
-            </div>
-
-            <div class="contact-inputs" id="checkbox-recontact">
-              <input
-                aria-label="Checkbox si vous voulez être recontacté."
-                class="recontact"
-                id="recontact"
-                name="recontact"
-                type="checkbox"
-                value="La personne veut être recontactée"
-                checked
-              />
-              <label for="recontact">J'accepte d'être recontacté</label>
             </div>
 
             <div>
               <p>Un préférence pour vous recontacter ?</p>
-              <input
+              <div id="choix-contact">
+                <input
                 aria-label="Radio si vous voulez être recontacté par email."
                 id="recontactChoixEmail"
                 name="contactChoice"
@@ -117,6 +110,8 @@
                 value="telephone"
               />
               <label for="recontactChoixTelephone">Téléphone</label>
+              </div>
+              
             </div>
 
             <div class="contact-inputs">
