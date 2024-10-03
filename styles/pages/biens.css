@@ -6,6 +6,7 @@ h1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 2vw;
+  grid-row-gap: 1vh;
 }
 
 .photo img {
@@ -14,14 +15,41 @@ h1 {
   box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.2);
 }
 
+@media (max-width: 700px) {
+  #gallerie-photos {
+    grid-template-columns: 1fr 1fr;
+  }
+  .photo img {
+    width: 45vw;
+  }
+}
+
+@media (max-width: 550px) {
+  #gallerie-photos {
+    grid-template-columns: 1fr;
+  }
+  .photo img {
+    width: 90vw;
+  }
+}
+
 #caracteristiques {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   margin-top: 30px;
+  grid-row-gap: 1vh;
+}
+
+#caracteristiques div {
+  width: 25vw;
 }
 
 #découvrir {
   margin-top: 30px;
   display: flex;
   justify-content: center;
+}
+
+.fas{
+  color: var(--second-color);
 }
