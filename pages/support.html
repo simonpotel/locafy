@@ -24,28 +24,31 @@
           <input name="subject" type="hidden" value="Portfolio Alert" />
           <input name="from_name" type="hidden" value="Portfolio" />
           <div id="inputs">
-            <div class="contact-inputs">
-              <label class="form-label" for="nom">Nom</label>
-              <input
-                aria-label="Input pour votre nom."
-                class="form-input"
-                id="nom"
-                name="nom"
-                required
-                type="text"
-              />
+            <div>
+              <div class="contact-inputs">
+                <label class="form-label" for="nom">Nom</label>
+                <input
+                  aria-label="Input pour votre nom."
+                  class="form-input"
+                  id="nom"
+                  name="nom"
+                  required
+                  type="text"
+                />
+              </div>
+              <div class="contact-inputs">
+                <label class="form-label" for="prenom">Prénom</label>
+                <input
+                  aria-label="Input pour votre prénom."
+                  class="form-input"
+                  id="prenom"
+                  name="prenom"
+                  required
+                  type="text"
+                />
+              </div>
             </div>
-            <div class="contact-inputs">
-              <label class="form-label" for="prenom">Prénom</label>
-              <input
-                aria-label="Input pour votre prénom."
-                class="form-input"
-                id="prenom"
-                name="prenom"
-                required
-                type="text"
-              />
-            </div>
+
 
             <div class="contact-inputs">
               <label class="form-label" for="email">Email</label>
@@ -63,7 +66,7 @@
               <input
                 aria-label="Input pour le numéro de téléphone."
                 class="form-input"
-                id="phone"
+                id="telephone"
                 name="téléphone"
                 type="tel"
               />
@@ -79,8 +82,7 @@
               ></textarea>
             </div>
 
-            <div class="contact-inputs">
-              <label for="recontact">J'accepte d'être recontacté</label>
+            <div class="contact-inputs" id="checkbox-recontact">
               <input
                 aria-label="Checkbox si vous voulez être recontacté."
                 class="recontact"
@@ -90,6 +92,7 @@
                 value="La personne veut être recontactée"
                 checked
               />
+              <label for="recontact">J'accepte d'être recontacté</label>
             </div>
 
             <div>
