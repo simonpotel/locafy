@@ -24,7 +24,6 @@ h2 {
   flex-direction: column;
 }
 
-
 #nom,
 #prenom,
 #email,
@@ -42,8 +41,8 @@ form .form-label {
   height: 150px;
 }
 
-#choix-contact{
-  display:flex;
+#choix-contact {
+  display: flex;
   justify-content: space-evenly;
 }
 
@@ -72,7 +71,7 @@ form {
 }
 
 @media (max-width: 495px) {
-  /* solution temporaire car le responsive du h3 ne fonctionne pas bien */ 
+  /* solution temporaire car le responsive du h3 ne fonctionne pas bien */
   div > h3 {
     display: none;
   }
