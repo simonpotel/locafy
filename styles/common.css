@@ -61,7 +61,7 @@ header a {
 header button {
   font-size: 1rem;
   background-color: transparent;
-  border: 0;
+  border: 0px;
 }
 
 /* menu déroulant "Biens" */
@@ -132,8 +132,8 @@ span.highlight-like {
 
 .brick {
   padding: 20px;
-  border: 1px solid #ccc;
+  border: 1px solid rgb(204, 204, 204);
   border-radius: 16px;
-  background-color: #f9f9f9;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: rgb(249, 249, 249);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 8px;
 }
