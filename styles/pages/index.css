@@ -18,9 +18,8 @@ main h1 {
   width: 200px;
 }
 
-/* couleur sur "vos rêves" et "clics" */
-span.highlight {
-  color: var(--primary-color);
+#vendettes {
+  margin-top: 50px;
 }
 
 @media (max-width: 470px) {

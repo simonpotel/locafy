@@ -11,6 +11,7 @@
   --second-color: #246ed6;
   --third-color: #1f58a7;
   --fourth-color: #40a77e;
+  --like-color: #ee2e31;
 }
 
 /* commun à toutes les <a> des pages */
@@ -126,6 +127,10 @@ main h1 {
   color: var(--primary-color);
 }
 
-main h2 {
-  color: var(--second-color);
+span.highlight {
+  color: var(--primary-color);
+}
+
+span.highlight-like {
+  color: var(--like-color);
 }
