@@ -49,7 +49,7 @@ form .form-label {
   color: var(--borders-color);
 }
 
-form {
+.brick {
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 16px;
