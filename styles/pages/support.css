@@ -5,6 +5,10 @@ h3 {
   justify-content: center;
 }
 
+h1 {
+  color: var(--second-color);
+}
+
 /* centrer les inputs au centre du form */
 #inputs {
   display: flex;
@@ -33,7 +37,7 @@ h3 {
 }
 
 form .form-label {
-  color: var(--second-color);
+  color: var(--primary-color);
 }
 
 #choix-contact {

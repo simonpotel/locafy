@@ -8,10 +8,9 @@
   margin-right: 3vw;
   margin-top: 2vh;
   --primary-color: #2c6951;
-  --second-color: #246ed6;
-  --third-color: #1f58a7;
-  --fourth-color: #40a77e;
-  --like-color: #ee2e31;
+  --second-color: #ee2e31;
+  --third-color: #c32225;
+  --fourth-color: #348967;
 }
 
 /* commun à toutes les <a> des pages */
@@ -123,14 +122,10 @@ main a:hover {
   background-color: var(--third-color);
 }
 
-main h1 {
-  color: var(--primary-color);
-}
-
 span.highlight {
   color: var(--primary-color);
 }
 
 span.highlight-like {
-  color: var(--like-color);
+  color: var(--second-color);
 }
