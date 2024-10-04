@@ -1,3 +1,6 @@
+/* fichier css chargé en premier sur l'ensemble des pages */
+
+/* ensemble de la page */ 
 :root {
   font-family: Airbnb Cereal VF, Circular, -apple-system, BlinkMacSystemFont,
     Roboto, Helvetica Neue, sans-serif;
@@ -10,30 +13,36 @@
   --fourth-color: #40a77e;
 }
 
+/* commun à toutes les <a> des pages */
+a{
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* header */
 header {
   display: flex;
   justify-content: space-between;
-}
-
-header img {
-  width: 40px;
-  margin-top: -15px;
-}
-
-header button {
-  font-size: 1rem;
-  background-color: transparent;
-  border: 0;
 }
 
 header a {
   color: rgb(149, 149, 149);
 }
 
+/* logo locafy header */
+#header-left img {
+  width: 40px;
+  margin-top: -15px;
+}
+
+/* logo à côté de "locafy" header */
 #header-left {
   display: flex;
 }
 
+/* "locafy" header */
 #header-left a {
   color: var(--primary-color);
 }
@@ -48,6 +57,14 @@ header a {
   margin-left: 2vw;
 }
 
+/* button "Biens" */
+header button {
+  font-size: 1rem;
+  background-color: transparent;
+  border: 0;
+}
+
+/* menu déroulant "Biens" */
 header .dropdown {
   position: relative;
   display: inline-block;
@@ -64,6 +81,7 @@ header .dropbtn {
   padding: 10px;
 }
 
+/* contenu menu déroulant "Biens */
 header .dropdown-content {
   display: none;
   position: absolute;
@@ -72,21 +90,24 @@ header .dropdown-content {
   z-index: 1;
 }
 
-header .dropdown-content a:hover {
-  background-color: var(--second-color);
-  color: white;
-}
-
+/* élements du menu déroulant "Biens" */
 header .dropdown-content a {
   color: black;
   padding: 12px 16px;
   display: block;
 }
 
+header .dropdown-content a:hover {
+  background-color: var(--second-color);
+  color: white;
+}
+
+/* affichage du menu déroulant "Biens" au layer premier */
 header .dropdown:hover .dropdown-content {
   display: block;
 }
 
+/*  stylism <button> et <a> */
 main button,
 main a {
   border: none;
@@ -102,9 +123,3 @@ main a:hover {
   background-color: var(--third-color);
 }
 
-a{
-  text-decoration: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
