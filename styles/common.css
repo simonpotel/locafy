@@ -24,13 +24,10 @@ header button {
   font-size: 1rem;
   background-color: transparent;
   border: 0;
-  border-radius: 0.5rem;
 }
 
 header a {
-  text-decoration: none;
   color: rgb(149, 149, 149);
-  margin-top: 10px;
 }
 
 #header-left {
@@ -51,23 +48,23 @@ header a {
   margin-left: 2vw;
 }
 
-.dropdown {
+header .dropdown {
   position: relative;
   display: inline-block;
 }
 
-.fa-chevron-down {
+header .fa-chevron-down {
   color: var(--second-color);
   margin-top: 10px;
   margin-right: -5px;
 }
 
-.dropbtn {
+header .dropbtn {
   color: var(--second-color);
   padding: 10px;
 }
 
-.dropdown-content {
+header .dropdown-content {
   display: none;
   position: absolute;
   background-color: white;
@@ -75,18 +72,18 @@ header a {
   z-index: 1;
 }
 
-.dropdown-content a:hover {
+header .dropdown-content a:hover {
   background-color: var(--second-color);
   color: white;
 }
 
-.dropdown-content a {
+header .dropdown-content a {
   color: black;
   padding: 12px 16px;
   display: block;
 }
 
-.dropdown:hover .dropdown-content {
+header .dropdown:hover .dropdown-content {
   display: block;
 }
 
@@ -96,16 +93,18 @@ main a {
   color: white;
   background-color: var(--second-color);
   border-radius: 15px;
-  text-align: center;
   height: 40px;
   width: 120px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
 }
 
 main button:hover,
 main a:hover {
   background-color: var(--third-color);
+}
+
+a{
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
