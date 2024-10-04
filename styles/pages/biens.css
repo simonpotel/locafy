@@ -41,7 +41,8 @@ h1 {
 }
 
 #caracteristiques div {
-  width: 25vw;
+  width: 30vw;
+  font-size: 1.1em;
 }
 
 #découvrir {
