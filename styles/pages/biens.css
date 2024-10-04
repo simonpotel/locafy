@@ -1,7 +1,9 @@
-h1 {
+/* nom du bien */
+main h1 {
   color: var(--primary-color);
 }
 
+/* grid photos du bien */
 #gallerie-photos {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -9,12 +11,14 @@ h1 {
   grid-row-gap: 1vh;
 }
 
+/* photos du bien */
 .photo img {
   width: 30vw;
   border-radius: 10px;
   box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.2);
 }
 
+/* icons caractéristiques */
 .fas {
   color: var(--second-color);
 }
@@ -39,7 +43,7 @@ h1 {
 
 @media (max-width: 700px) {
   #gallerie-photos {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr; /* grid photos de 2 */
   }
   .photo img {
     width: 45vw;
@@ -48,7 +52,7 @@ h1 {
 
 @media (max-width: 550px) {
   #gallerie-photos {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* grid photos de 1 (en colonne) */
   }
   .photo img {
     width: 90vw;
