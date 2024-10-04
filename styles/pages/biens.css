@@ -1,3 +1,10 @@
+@media (min-width: 425px) {
+  main {
+    margin-left: 15vw;
+    margin-right: 15vw;
+  }
+}
+
 /* grid photos du bien */
 #gallerie-photos {
   display: grid;
@@ -16,7 +23,7 @@
 
 /* icons caractéristiques */
 .fas {
-  color: var(--second-color);
+  color: var(--primary-color);
 }
 
 #caracteristiques {
@@ -30,44 +37,77 @@
   font-size: 1.1em;
 }
 
-#achat {
-  min-width: 150px;
-  width: 10vw;
-}
-
-#achat form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
 #infos {
   margin-top: 30px;
   display: flex;
   justify-content: center;
 }
 
-@media (max-width: 700px) {
-  #gallerie-photos {
-    grid-template-columns: 1fr 1fr; /* grid photos de 2 */
+@media (min-width: 1500px) {
+  #landing {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
   }
-  .photo img {
-    width: 45vw;
+  #achat {
+    min-width: 150px;
+    width: 10vw;
+  }
+
+  #achat form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
   }
 }
 
-@media (max-width: 550px) {
-  #gallerie-photos {
-    grid-template-columns: 1fr; /* grid photos de 1 (en colonne) */
+@media (max-width: 1500px) {
+  #achat {
+    margin-top: 30px;
   }
+
+  #achat form {
+    display: flex;
+    gap: 15px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   .photo img {
-    width: 90vw;
+    width: 29vw;
   }
 }
 
-#landing {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
+@media (max-width: 780px) {
+  #gallerie-photos {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .photo img {
+    width: 60vw;
+  }
+  #achat form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 425px) {
+  #achat {
+    min-width: 50vw;
+  }
+  .photo img {
+    width: 85vw;
+  }
+}
+
+@media (max-width: 370px) {
+  #caracteristiques {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
 }
