@@ -1,6 +1,6 @@
 /* fichier css chargé en premier sur l'ensemble des pages */
 
-/* ensemble de la page */ 
+/* ensemble de la page */
 :root {
   font-family: Airbnb Cereal VF, Circular, -apple-system, BlinkMacSystemFont,
     Roboto, Helvetica Neue, sans-serif;
@@ -14,7 +14,7 @@
 }
 
 /* commun à toutes les <a> des pages */
-a{
+a {
   text-decoration: none;
   display: flex;
   justify-content: center;
@@ -122,3 +122,10 @@ main a:hover {
   background-color: var(--third-color);
 }
 
+main h1 {
+  color: var(--primary-color);
+}
+
+main h2 {
+  color: var(--second-color);
+}

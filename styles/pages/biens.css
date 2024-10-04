@@ -1,8 +1,3 @@
-/* nom du bien */
-main h1 {
-  color: var(--primary-color);
-}
-
 /* grid photos du bien */
 #gallerie-photos {
   display: grid;
