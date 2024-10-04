@@ -18,6 +18,7 @@ h3 {
   flex-direction: column;
 }
 
+/* tailles des inputs */
 #nom,
 #prenom,
 #email,
@@ -26,13 +27,13 @@ h3 {
   margin-bottom: 5px;
 }
 
-form .form-label {
-  color: var(--second-color);
-}
-
 #message {
   width: 350px;
   height: 150px;
+}
+
+form .form-label {
+  color: var(--second-color);
 }
 
 #choix-contact {
