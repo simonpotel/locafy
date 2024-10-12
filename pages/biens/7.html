@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>locafy</title>
+    <script src="/scripts/head.js"></script>
+    <script src="/scripts/bodystruct.js"></script>
+    <link rel="stylesheet" href="/styles/pages/biens.css" />
+    <link rel="stylesheet" href="/styles/pages/biens-iframes.css" />
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <h1>
+        <a href="/pages/biens/7.html" target="_parent"
+          >LA FORGE, résidence à Quinson, France</a
+        >
+      </h1>
+      <h2 id="prix">
+        Prix par nuit: <br /><span class="neutral-color-4">47 €</span>
+      </h2>
+      <p>
+        Venez découvrir LA FORGE, un logement unique au cœur de Quinson, offrant
+        une cour rafraîchissante pour profiter de moments de détente. <br />Avec
+        une vue sur le front de mer, ce logement est parfait pour une escapade
+        au calme. <br />Il comprend une cuisine équipée, un wifi avec une
+        vitesse de 21 Mbps pour travailler ou se divertir, ainsi qu'un espace de
+        travail dédié pour vos besoins professionnels. <br />Parking gratuit sur
+        place, lave-linge gratuit dans le logement, et un patio privé ou balcon
+        pour profiter de l'extérieur. La cour est entièrement clôturée pour plus
+        d'intimité.
+      </p>
+      <div id="landing">
+        <div id="gallerie-photos">
+          <div class="photo">
+            <img
+              src="/assets/biens/7/1.jpeg"
+              alt="Terrasse ombragée avec vue sur le ciel depuis l'intérieur."
+            />
+          </div>
+          <div class="photo">
+            <img
+              src="/assets/biens/7/2.jpeg"
+              alt="Salon avec canapé, tableaux et bibliothèque en arrière-plan."
+            />
+          </div>
+          <div class="photo">
+            <img
+              src="/assets/biens/7/3.jpeg"
+              alt="Cuisine verte et blanche avec carrelage dans un style vintage."
+            />
+          </div>
+          <div class="photo">
+            <img
+              src="/assets/biens/7/4.jpeg"
+              alt="Salon avec canapé et espace ouvert sur la cuisine."
+            />
+          </div>
+        </div>
+        <div id="achat" class="brick">
+          <h2>Réserver ce bien</h2>
+          <h3>
+            Prix par nuit: <br /><span class="neutral-color-4">47 €</span>
+          </h3>
+          <form aria-labelledby="Réserver">
+            <div>
+              <label for="arrivee">Jour d'arrivée:</label>
+              <input
+                type="date"
+                name="arrivee"
+                id="arrivee"
+                aria-label="Sélectionner le jour d'arrivée"
+                required
+              />
+            </div>
+            <div>
+              <label for="depart">Jour de départ:</label>
+              <input
+                type="date"
+                name="depart"
+                id="depart"
+                aria-label="Sélectionner le jour de départ"
+                required
+              />
+            </div>
+            <div>
+              <a
+                href="https://www.airbnb.fr/rooms/577480512580269192?adults=1&children=0&enable_m3_private_room=true&infants=0&pets=0&search_mode=regular_search&check_in=2024-10-06&check_out=2024-10-11"
+                target="_blank"
+                class="cliquable aligner"
+                aria-label="Réserver via Airbnb, lien ouvrant dans une nouvelle fenêtre"
+                >Réserver</a
+              >
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div id="caracteristiques">
+        <div class="carac"><i class="fas fa-water"></i> Front de mer</div>
+        <div class="carac"><i class="fas fa-utensils"></i> Cuisine</div>
+        <div class="carac">
+          <i class="fas fa-laptop"></i> Espace de travail dédié
+        </div>
+        <div class="carac">
+          <i class="fas fa-parking"></i> Parking gratuit sur place
+        </div>
+        <div class="carac">
+          <i class="fas fa-chair"></i> Patio ou balcon privé
+        </div>
+        <div class="carac">
+          <i class="fas fa-tree"></i> Arrière-cour privée – Clôture intégrale
+        </div>
+      </div>
+
+      <div id="biens">
+        <h2>Biens recommandés</h2>
+        <div id="biens-grid">
+          <iframe
+            src="/pages/biens/9.html"
+            class="brick"
+            title="Détails sur le bien 9: Logement à Muang Pattaya, Thaïlande"
+            scrolling="no"
+          ></iframe>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>

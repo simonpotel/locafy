@@ -1,0 +1,173 @@
+/* espace entre le main et le header */
+main {
+  margin-top: 10px;
+}
+
+/* contenu: h1, p et img */
+#landing {
+  display: flex;
+  max-width: 1500px;
+}
+
+/* phrase d'accroche */
+#landing h1 {
+  margin-top: -40px;
+}
+
+/* ensemble flex gauche : h1, p et bouton */
+#landing div:first-child {
+  width: 63vw;
+  min-width: 300px;
+  max-width: 1500px;
+  margin-top: 30px;
+}
+
+/* ensemble flex droit: 4picturesin1 */
+#landing img,
+#index-illustration {
+  width: 20vw;
+  min-width: 250px;
+  max-width: 450px;
+}
+
+#categs h2 {
+  margin-top: 60px;
+}
+
+/* grid des 4 catégories  */
+#categs-grid {
+  display: grid;
+  max-width: 1000px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+/* div de chaque catégorie */
+.categ {
+  padding: 20px;
+  width: 255px;
+  max-width: 260px;
+}
+
+/* fa icon à gauche des h categ */
+.categ .fas {
+  color: var(--color-4);
+}
+
+/* banner des catégories */
+.categ img {
+  width: 165vw;
+  max-width: 260px;
+  border-radius: 13px;
+  object-fit: cover;
+  max-height: 150px;
+}
+
+@media (max-width: 1900px) {
+  /* realignement de p avec h1 due aux différences de font-size */
+  #landing p {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 1650px) {
+  #categs-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 1450px) {
+  #landing {
+    flex-direction: column-reverse;
+  }
+  #landing h1 {
+    font-size: 4rem;
+  }
+  #landing p {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 1300px) {
+  #categs-grid {
+    grid-template-columns: 1fr 1fr;
+    width: 50vw;
+  }
+
+  .categ,
+  .categ img {
+    width: 260px;
+  }
+
+  #landing h1 {
+    font-size: 4rem;
+  }
+  #landing p {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 950px) {
+  #landing p {
+    margin-top: -1vw;
+  }
+}
+
+@media (max-width: 850px) {
+  #landing h1 {
+    font-size: 3.5rem;
+  }
+  #landing p {
+    font-size: 1.5rem;
+  }
+  .categ,
+  .categ img {
+    width: 27vw;
+  }
+}
+
+@media (max-width: 550px) {
+  #categs-grid {
+    grid-template-columns: 1fr;
+  }
+  #categs-grid {
+    width: 86vw;
+  }
+
+  .categ,
+  .categ img {
+    width: 63vw;
+    max-width: 63vw;
+    min-width: 215px;
+  }
+
+  #landing h1 {
+    font-size: 3rem;
+  }
+  #landing p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 470px) {
+  /* contenu un peu plus centré sur la page */
+  main {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media (min-width: 1450px) {
+  #landing h1 {
+    font-size: 4rem;
+  }
+  #landing p {
+    font-size: 1.3rem;
+    margin-top: -30px;
+  }
+}
+
+h2{
+  font-size: 2rem;
+}
+

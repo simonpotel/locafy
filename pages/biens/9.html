@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>locafy</title>
+    <script src="/scripts/head.js"></script>
+    <script src="/scripts/bodystruct.js"></script>
+    <link rel="stylesheet" href="/styles/pages/biens.css" />
+    <link rel="stylesheet" href="/styles/pages/biens-iframes.css" />
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <h1>
+        <a href="/pages/biens/9.html" target="_parent"
+          >Muang Pattaya, Thaïlande</a
+        >
+      </h1>
+      <h2 id="prix">
+        Prix par nuit: <br /><span class="neutral-color-4">49 €</span>
+      </h2>
+      <p>
+        Venez profiter d'un appartement spacieux au cœur de Pattaya centrale. Ce
+        logement est idéalement situé près de la plage, parfait pour un séjour
+        relaxant.
+        <br />Cet appartement est équipé d'une cuisine fonctionnelle, d'une
+        connexion wifi rapide, et d'un espace de travail dédié. <br />Profitez
+        de la piscine sur place, et d'un parking gratuit pour plus de confort.
+        <br />L'appartement dispose également d'une télévision avec un
+        abonnement standard au câble, d'un ascenseur pour faciliter l'accès, et
+        d'un lave-linge. Des caméras de surveillance extérieures sont installées
+        pour garantir votre sécurité.
+      </p>
+      <div id="landing">
+        <div id="gallerie-photos">
+          <div class="photo">
+            <img
+              src="/assets/biens/9/1.jpeg"
+              alt="Salon de l'appartement avec canapé et vue sur la mer pendant la journée."
+            />
+          </div>
+          <div class="photo">
+            <img
+              src="/assets/biens/9/2.jpeg"
+              alt="Salon de l'appartement avec canapé et vue sur la mer la nuit."
+            />
+          </div>
+          <div class="photo">
+            <img
+              src="/assets/biens/9/3.jpeg"
+              alt="Piscine extérieure avec vue sur la ville."
+            />
+          </div>
+          <div class="photo">
+            <img
+              src="/assets/biens/9/4.jpeg"
+              alt="Vue de nuit du bas de l'appartement."
+            />
+          </div>
+        </div>
+        <div id="achat" class="brick">
+          <h2>Réserver ce bien</h2>
+          <h3>
+            Prix par nuit: <br /><span class="neutral-color-4">49 €</span>
+          </h3>
+          <form aria-labelledby="Réserver">
+            <div>
+              <label for="arrivee">Jour d'arrivée:</label>
+              <input
+                type="date"
+                name="arrivee"
+                id="arrivee"
+                required
+                aria-label="Sélectionner le jour d'arrivée"
+              />
+            </div>
+            <div>
+              <label for="depart">Jour de départ:</label>
+              <input
+                type="date"
+                name="depart"
+                id="depart"
+                required
+                aria-label="Sélectionner le jour de départ"
+              />
+            </div>
+            <div>
+              <a
+                href="https://www.airbnb.fr/rooms/1253396460472442804?adults=1&children=0&enable_m3_private_room=true&infants=0&pets=0&search_mode=regular_search&check_in=2024-10-06&check_out=2024-10-11"
+                target="_blank"
+                class="cliquable aligner"
+                aria-label="Réserver via Airbnb, lien ouvrant dans une nouvelle fenêtre"
+                >Réserver</a
+              >
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div id="caracteristiques">
+        <div class="carac">
+          <i class="fas fa-umbrella-beach"></i> Accès plage ou bord de mer
+        </div>
+        <div class="carac"><i class="fas fa-utensils"></i> Cuisine</div>
+        <div class="carac"><i class="fas fa-wifi"></i> Wifi</div>
+        <div class="carac">
+          <i class="fas fa-laptop"></i> Espace de travail dédié
+        </div>
+        <div class="carac">
+          <i class="fas fa-parking"></i> Parking gratuit sur place
+        </div>
+        <div class="carac"><i class="fas fa-swimming-pool"></i> Piscine</div>
+        <div class="carac">
+          <i class="fas fa-tv"></i> TV avec abonnement standard au câble
+        </div>
+        <div class="carac"><i class="fas fa-elevator"></i> Ascenseur</div>
+        <div class="carac">
+          <i class="fas fa-camera"></i> Caméras de surveillance extérieures
+        </div>
+      </div>
+
+      <div id="biens">
+        <h2>Biens recommandés</h2>
+        <div id="biens-grid">
+          <iframe
+            src="/pages/biens/7.html"
+            class="brick"
+            title="Détails sur le bien 7: Maison LAFORGE à Quison en France"
+            scrolling="no"
+          ></iframe>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>

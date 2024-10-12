@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>locafy</title>
+    <script src="/scripts/head.js"></script>
+    <script src="/scripts/bodystruct.js"></script>
+    <link rel="stylesheet" href="/styles/pages/biens.css" />
+    <link rel="stylesheet" href="/styles/pages/biens-iframes.css" />
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <h1>
+        <a href="/pages/biens/6.html" target="_parent"
+          >Chalet aux Tignes, France</a
+        >
+      </h1>
+      <h2 id="prix">
+        Prix par nuit: <br /><span class="neutral-color-4">80 €</span>
+      </h2>
+      <p>
+        Découvrez ce charmant chalet aux Tignes, parfait pour une escapade
+        hivernale. <br />Bénéficiez d'une magnifique vue sur la montagne et d'un
+        accès au lac pour des moments inoubliables. <br />Le chalet est
+        accessible à skis, à proximité des remontées mécaniques, ce qui en fait
+        un choix idéal pour les amateurs de sports d'hiver. <br />Il est
+        également équipé d'une cuisine complète, d'une TV HD avec lecteur DVD,
+        et dispose d'un ascenseur pour plus de commodité. <br />Détendez-vous
+        dans la baignoire après une journée active, et profitez du patio ou
+        balcon privé pour admirer la vue.
+      </p>
+      <div id="landing">
+        <div id="gallerie-photos">
+          <div class="photo">
+            <img
+              src="/assets/biens/6/1.jpeg"
+              alt="Vue depuis la terrasse sur une colline enneigée aux Tignes."
+            />
+          </div>
+          <div class="photo">
+            <img
+              src="/assets/biens/6/2.jpeg"
+              alt="Salon chaleureux avec vue sur la colline enneigée depuis la fenêtre."
+            />
+          </div>
+          <div class="photo">
+            <img
+              src="/assets/biens/6/3.jpeg"
+              alt="Cuisine ouverte en bois donnant sur le salon avec une ambiance chalet."
+            />
+          </div>
+          <div class="photo">
+            <img
+              src="/assets/biens/6/4.jpeg"
+              alt="Salon avec canapé et télévision face à une grande fenêtre donnant sur la colline."
+            />
+          </div>
+        </div>
+        <div id="achat" class="brick">
+          <h2>Réserver ce bien</h2>
+          <h3>
+            Prix par nuit: <br /><span class="neutral-color-4">80 €</span>
+          </h3>
+          <form aria-labelledby="Réserver">
+            <div>
+              <label for="arrivee">Jour d'arrivée:</label>
+              <input
+                type="date"
+                name="arrivee"
+                id="arrivee"
+                aria-label="Sélectionner le jour d'arrivée"
+                required
+              />
+            </div>
+            <div>
+              <label for="depart">Jour de départ:</label>
+              <input
+                type="date"
+                name="depart"
+                id="depart"
+                aria-label="Sélectionner le jour de départ"
+                required
+              />
+            </div>
+            <div>
+              <a
+                href="https://www.airbnb.fr/rooms/46849331?adults=1&children=0&enable_m3_private_room=true&infants=0&pets=0&search_mode=regular_search&check_in=2024-10-08&check_out=2024-10-13"
+                target="_blank"
+                class="cliquable aligner"
+                aria-label="Réserver via Airbnb, lien ouvrant dans une nouvelle fenêtre"
+                >Réserver</a
+              >
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div id="caracteristiques">
+        <div class="carac">
+          <i class="fas fa-mountain"></i> Vue sur la montagne
+        </div>
+        <div class="carac"><i class="fas fa-water"></i> Accès au lac</div>
+        <div class="carac"><i class="fas fa-skiing"></i> Accessible à skis</div>
+        <div class="carac"><i class="fas fa-utensils"></i> Cuisine</div>
+        <div class="carac">
+          <i class="fas fa-tv"></i> TV HD avec lecteur DVD
+        </div>
+        <div class="carac"><i class="fas fa-elevator"></i> Ascenseur</div>
+        <div class="carac"><i class="fas fa-bath"></i> Baignoire</div>
+        <div class="carac">
+          <i class="fas fa-chair"></i> Patio ou balcon privé
+        </div>
+        <div class="carac"><i class="fas fa-baby"></i> Lit pour bébé</div>
+      </div>
+
+      <div id="biens">
+        <h2>Biens recommandés</h2>
+        <div id="biens-grid">
+          <iframe
+            src="/pages/biens/1.html"
+            class="brick"
+            title="Détails sur le bien 1: Logement à Kecamatan Kuta, Indonésie"
+            scrolling="no"
+          ></iframe>
+          <iframe
+            src="/pages/biens/3.html"
+            class="brick"
+            title="Détails sur le bien 3: Logement à Mercury Cottage - Meraki Inn"
+            scrolling="no"
+          ></iframe>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+/* css qui gère les iframes et permet de désactiver ou changer la disposition pour les pages biens */
+.iframe-manager p {
+  display: none;
+}
+
+.iframe-manager #gallerie-photos :not(:first-child) {
+  display: none;
+}
+
+.iframe-manager #caracteristiques {
+  display: none;
+}
+
+.iframe-manager form label,
+.iframe-manager form input {
+  display: none;
+}
+
+.iframe-manager #achat {
+  display: none;
+}
+
+.iframe-manager form a {
+  margin-top: -30px;
+}
+
+.iframe-manager h1 {
+  font-size: 1.4em;
+}
+
+.iframe-manager h2 {
+  font-size: 1.2em;
+}
+
+.iframe-manager img {
+  width: 85vw;
+  height: auto;
+}
+
+
+
+.iframe-manager #biens {
+  display: none;
+}

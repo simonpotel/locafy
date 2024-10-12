@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>locafy</title>
+    <script src="/scripts/head.js"></script>
+    <script src="/scripts/bodystruct.js"></script>
+    <link rel="stylesheet" href="/styles/pages/biens.css" />
+    <link rel="stylesheet" href="/styles/pages/biens-iframes.css" />
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <h1>
+        <a href="/pages/biens/2.html" target="_parent"
+          >Miami, Floride, États-Unis</a
+        >
+      </h1>
+      <h2 id="prix">
+        Prix par nuit : <br /><span class="neutral-color-4">111 €</span>
+      </h2>
+      <p>
+        Découvrez cet appartement moderne et spacieux situé à Miami, à deux pas
+        des plages magnifiques et des activités de la ville.
+        <br />L'appartement offre tout le confort avec un espace de travail
+        dédié, une cuisine équipée, et un accès à une piscine et un jacuzzi
+        partagé. <br />Idéal pour un séjour relaxant avec sauna commun et
+        animaux acceptés. Ascenseur disponible pour plus de commodité.
+      </p>
+      <div id="landing">
+        <div id="gallerie-photos">
+          <div class="photo">
+            <img
+              src="/assets/biens/2/1.jpeg"
+              alt="Salle à manger avec plusieurs tables à manger et vue dégagée"
+            />
+          </div>
+          <div class="photo">
+            <img
+              src="/assets/biens/2/2.jpeg"
+              alt="Salon avec une télévision et un canapé moderne"
+            />
+          </div>
+          <div class="photo">
+            <img
+              src="/assets/biens/2/3.jpeg"
+              alt="Table à manger en open space avec le salon et lumière naturelle"
+            />
+          </div>
+          <div class="photo">
+            <img
+              src="/assets/biens/2/4.jpeg"
+              alt="Piscine intérieure moderne avec lumière naturelle"
+            />
+          </div>
+        </div>
+        <div id="achat" class="brick">
+          <h2>Réserver ce bien</h2>
+          <h3>
+            Prix par nuit : <br /><span class="neutral-color-4">111 €</span>
+          </h3>
+          <form aria-labelledby="Réserver">
+            <div>
+              <label for="arrivee">Jour d'arrivée :</label>
+              <input
+                type="date"
+                name="arrivee"
+                id="arrivee"
+                aria-label="Sélectionner le jour d'arrivée"
+                required
+              />
+            </div>
+            <div>
+              <label for="depart">Jour de départ :</label>
+              <input
+                type="date"
+                name="depart"
+                id="depart"
+                aria-label="Sélectionner le jour de départ"
+                required
+              />
+            </div>
+            <div>
+              <a
+                href="https://www.airbnb.fr/rooms/986865214605513991?adults=1&children=0&enable_m3_private_room=true&infants=0&pets=0&search_mode=regular_search&check_in=2024-11-09&check_out=2024-11-14&source_impression_id=p3_1728158281_P3UJKa57bfSck4z1"
+                target="_blank"
+                class="cliquable aligner"
+                aria-label="Réserver via Airbnb, lien ouvrant dans une nouvelle fenêtre"
+                >Réserver</a
+              >
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div id="caracteristiques">
+        <div class="carac">
+          <i class="fas fa-umbrella-beach"></i> Accès plage ou bord de mer
+        </div>
+        <div class="carac"><i class="fas fa-utensils"></i> Cuisine équipée</div>
+        <div class="carac"><i class="fas fa-wifi"></i> Wifi haut débit</div>
+        <div class="carac">
+          <i class="fas fa-laptop"></i> Espace de travail dédié
+        </div>
+        <div class="carac">
+          <i class="fas fa-swimming-pool"></i> Piscine intérieure
+        </div>
+        <div class="carac"><i class="fas fa-hot-tub"></i> Jacuzzi partagé</div>
+        <div class="carac"><i class="fas fa-hot-tub"></i> Sauna commun</div>
+        <div class="carac"><i class="fas fa-paw"></i> Animaux acceptés</div>
+        <div class="carac"><i class="fas fa-tv"></i> Télévision</div>
+        <div class="carac"><i class="fas fa-elevator"></i> Ascenseur</div>
+      </div>
+
+      <div id="biens">
+        <h2>Biens recommandés</h2>
+        <div id="biens-grid">
+          <iframe
+            src="/pages/biens/4.html"
+            class="brick"
+            title="Détails sur le bien 4: Maison à Manhattan"
+            scrolling="no"
+          ></iframe>
+          <iframe
+            src="/pages/biens/5.html"
+            class="brick"
+            title="Détails sur le bien 5: Penthouse à New York"
+            scrolling="no"
+          ></iframe>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>

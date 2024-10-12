@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>locafy</title>
+    <script src="/scripts/head.js"></script>
+    <script src="/scripts/bodystruct.js"></script>
+    <link rel="stylesheet" href="/styles/pages/biens.css" />
+    <link rel="stylesheet" href="/styles/pages/biens-iframes.css" />
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <h1>
+        <a href="/pages/biens/5.html" target="_parent"
+          >Penthouse Studio East 50 - New York</a
+        >
+      </h1>
+      <h2 id="prix">
+        Prix par nuit : <br /><span class="neutral-color-4">201 €</span>
+      </h2>
+      <p>
+        Séjournez dans ce superbe Penthouse Studio avec terrasse sur le toit
+        offrant une vue panoramique imprenable sur la ville de New York.
+        <br />Chambre privée dans un appartement moderne en résidence, cet
+        espace allie confort et commodités modernes avec une vue magnifique sur
+        le jardin et la ville. <br />Idéal pour les voyages d'affaires ou de
+        détente, avec Wi-Fi, espace de travail dédié, et divertissement avec des
+        services de streaming comme Amazon Prime, Hulu, Netflix, et Roku.
+        <br />Ascenseur, climatisation, baignoire, et services de lavage
+        disponibles dans le bâtiment (payant).
+      </p>
+      <div id="landing">
+        <div id="gallerie-photos">
+          <div class="photo">
+            <img
+              src="/assets/biens/5/1.jpeg"
+              alt="Terrasse fleurie avec vue sur les immeubles de New York"
+            />
+          </div>
+          <div class="photo">
+            <img
+              src="/assets/biens/5/2.jpeg"
+              alt="Vue de la terrasse sur la rue de New York avec un siège pour s'asseoir"
+            />
+          </div>
+          <div class="photo">
+            <img
+              src="/assets/biens/5/3.jpeg"
+              alt="Terrasse fleurie avec vue sur les immeubles de New York"
+            />
+          </div>
+          <div class="photo">
+            <img
+              src="/assets/biens/5/4.jpeg"
+              alt="Terrasse fleurie avec vue sur les immeubles"
+            />
+          </div>
+        </div>
+        <div id="achat" class="brick">
+          <h2>Réserver ce bien</h2>
+          <h3>
+            Prix par nuit : <br /><span class="neutral-color-4">201 €</span>
+          </h3>
+          <form aria-labelledby="Réserver">
+            <div>
+              <label for="arrivee">Jour d'arrivée :</label>
+              <input
+                type="date"
+                name="arrivee"
+                id="arrivee"
+                aria-label="Sélectionner le jour d'arrivée"
+                required
+              />
+            </div>
+            <div>
+              <label for="depart">Jour de départ :</label>
+              <input
+                type="date"
+                name="depart"
+                id="depart"
+                aria-label="Sélectionner le jour de départ"
+                required
+              />
+            </div>
+            <div>
+              <a
+                href="https://www.airbnb.fr/rooms/51241506?adults=1&children=0&enable_m3_private_room=true&infants=0&pets=0&search_mode=regular_search&check_in=2025-01-05&check_out=2025-01-10&source_impression_id=p3_1728207535_P3RJXLA42_ezS_Cc&previous_page_section_name=1000&federated_search_id=59152b51-ee8e-4665-a901-a5b33a316749"
+                target="_blank"
+                class="cliquable aligner"
+                aria-label="Réserver via Airbnb, lien ouvrant dans une nouvelle fenêtre"
+                >Réserver</a
+              >
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div id="caracteristiques">
+        <div class="carac"><i class="fas fa-tree"></i> Vue sur le jardin</div>
+        <div class="carac">
+          <i class="fas fa-city"></i> Vue panoramique sur la ville
+        </div>
+        <div class="carac"><i class="fas fa-wifi"></i> Wifi</div>
+        <div class="carac">
+          <i class="fas fa-laptop"></i> Espace de travail dédié
+        </div>
+        <div class="carac">
+          <i class="fas fa-tv"></i> TV avec Amazon Prime, Hulu, Netflix, Roku
+        </div>
+        <div class="carac"><i class="fas fa-elevator"></i> Ascenseur</div>
+        <div class="carac"><i class="fas fa-snowflake"></i> Climatisation</div>
+        <div class="carac"><i class="fas fa-bath"></i> Baignoire</div>
+      </div>
+
+      <div id="biens">
+        <h2>Biens recommandés</h2>
+        <div id="biens-grid">
+          <iframe
+            src="/pages/biens/2.html"
+            class="brick"
+            title="Détails sur le bien 2: Logement à Miami en Floride aux Etats-Unis"
+            scrolling="no"
+          ></iframe>
+          <iframe
+            src="/pages/biens/4.html"
+            class="brick"
+            title="Détails sur le bien 4: Maison à Manhattan"
+            scrolling="no"
+          ></iframe>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>

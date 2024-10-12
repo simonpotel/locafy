@@ -1,0 +1,125 @@
+/* disposition des titres  */
+#entete h2 {
+  margin-top: -20px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+
+/* centrer les inputs au centre du form */
+#inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-inputs {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* tailles des inputs */
+
+label[for="email"],
+label[for="telephone"],
+label[for="message"] {
+  margin-left: 5px;
+}
+
+#email,
+#telephone {
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+
+#message {
+  height: 150px;
+}
+
+.contact-inputs label {
+  margin-bottom: 5px;
+  font-size: 0.8rem;
+}
+
+.choix-contact-elmnt {
+  display: flex;
+}
+
+.brick {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+#support-illustration {
+  margin-right: 25px;
+}
+
+#formulaire{
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 850px) {
+  #support-illustration {
+    display: none;
+  }
+  .brick {
+    width: 70vw;
+  }
+}
+
+@media (max-width: 470px) {
+  input {
+    width: 55vw;
+  }
+  #recontact {
+    width: 45vw;
+  }
+  #choix-contact {
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+}
+#message {
+  width: 55vw;
+}
+#choix-contact {
+  display: flex;
+}
+
+input[type="radio"] {
+  color: var(--color-1);
+  width: 15px;
+}
+
+#inputs {
+  max-width: 600px;
+}
+
+
+@media (min-width: 470px) {
+  main {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  #inputs-nomprenom {
+    display: flex;
+    gap: 2.1vw;
+  }
+  #inputs-nomprenom input {
+    width: 16vw;
+    max-width: 180px;
+  }
+  #message,
+  #email,
+  #telephone,
+  #message {
+    width: 34vw;
+    max-width: 400px;
+  }
+  #choix-contact {
+    justify-content: space-evenly;
+  }
+}

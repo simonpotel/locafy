@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>locafy</title>
+    <script src="/scripts/head.js"></script>
+    <script src="/scripts/bodystruct.js"></script>
+    <link rel="stylesheet" href="/styles/pages/support.css" />
+  </head>
+
+  <body>
+    <header></header>
+    <main>
+      <div id="entete">
+        <h1 class="aligner">Support</h1>
+        <h2 class="aligner">
+          Renseignez vos coordonnées pour être recontacté <br />par notre
+          équipe.
+        </h2>
+      </div>
+      <div id="formulaire">
+        <div class="brick">
+          <div id="support-illustration">
+            <img
+              src="/assets/illustations/support.png"
+              alt="Image qui représente le voyage avec un avion en vol."
+            />
+          </div>
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input
+              name="access_key"
+              type="hidden"
+              value="50a489ee-bab9-4627-804c-460084e8b962"
+            />
+            <input name="subject" type="hidden" value="locafy" />
+            <input name="from_name" type="hidden" value="locafy" />
+            <div id="inputs">
+              <div id="inputs-nomprenom">
+                <div class="contact-inputs">
+                  <label for="nom">Nom</label>
+                  <input
+                    aria-label="Input pour votre nom."
+                    id="nom"
+                    name="nom"
+                    required
+                    type="text"
+                    placeholder="Votre nom"
+                  />
+                </div>
+                <div class="contact-inputs">
+                  <label for="prenom">Prénom</label>
+                  <input
+                    aria-label="Input pour votre prénom."
+                    id="prenom"
+                    name="prenom"
+                    required
+                    type="text"
+                    placeholder="Votre prénom"
+                  />
+                </div>
+              </div>
+
+              <div class="contact-inputs">
+                <label for="email">Email</label>
+                <input
+                  aria-label="Input votre email."
+                  id="email"
+                  name="email"
+                  required
+                  type="email"
+                  placeholder="Votre adresse email"
+                />
+              </div>
+              <div class="contact-inputs">
+                <label for="telephone">Téléphone</label>
+                <input
+                  aria-label="Input pour votre numéro de téléphone."
+                  id="telephone"
+                  name="téléphone"
+                  type="tel"
+                  placeholder="Votre numéro de télephone"
+                />
+              </div>
+
+              <div class="contact-inputs">
+                <label for="message">Message</label>
+                <textarea
+                  aria-label="Input pour le contenu de votre message."
+                  id="message"
+                  name="message"
+                  placeholder="Laissez-nous un petit mot, nous sommes à votre écoute !"
+                ></textarea>
+              </div>
+
+              <div id="recontact">
+                <p>Comment voudriez-vous être recontacté ?</p>
+                <div id="choix-contact">
+                  <div class="choix-contact-elmnt">
+                    <input
+                      aria-label="Radio si vous voulez être recontacté par email."
+                      id="recontactChoixEmail"
+                      name="choixContact"
+                      type="radio"
+                      value="email"
+                      checked
+                    />
+                    <label for="recontactChoixEmail">Email</label>
+                  </div>
+
+                  <div class="choix-contact-elmnt">
+                    <input
+                      aria-label="Radio si vous voulez être recontacté par téléphone."
+                      id="recontactChoixTelephone"
+                      name="choixContact"
+                      type="radio"
+                      value="telephone"
+                    />
+                    <label for="recontactChoixTelephone">Téléphone</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-inputs">
+                <button class="cliquable aligner">Envoyer</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>

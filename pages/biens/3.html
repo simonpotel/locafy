@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>locafy</title>
+    <script src="/scripts/head.js"></script>
+    <script src="/scripts/bodystruct.js"></script>
+    <link rel="stylesheet" href="/styles/pages/biens.css" />
+    <link rel="stylesheet" href="/styles/pages/biens-iframes.css" />
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <h1>
+        <a href="/pages/biens/3.html" target="_parent"
+          >Mercury Cottage - Meraki Inn</a
+        >
+      </h1>
+      <h2 id="prix">
+        Prix par nuit : <br /><span class="neutral-color-4">96 €</span>
+      </h2>
+      <p>
+        Bienvenue au Mercury Cottage, une charmante cabane nichée dans la
+        tranquillité de Cunha.
+        <br />Un refuge paisible, parfait pour se déconnecter, avec des
+        installations modernes telles qu'une cuisine équipée, un espace de
+        travail dédié, et un jacuzzi pour des moments de détente. <br />Vous
+        pourrez aussi profiter de la cheminée pour les soirées plus fraîches.
+        Parking gratuit disponible sur place pour plus de commodité.
+      </p>
+      <div id="landing">
+        <div id="gallerie-photos">
+          <div class="photo">
+            <img
+              src="/assets/biens/3/1.jpeg"
+              alt="Salle à manger avec vue dégagée sur une colline"
+            />
+          </div>
+          <div class="photo">
+            <img
+              src="/assets/biens/3/2.jpeg"
+              alt="Cuisine chaleureuse avec éclairage doux et table à manger"
+            />
+          </div>
+          <div class="photo">
+            <img
+              src="/assets/biens/3/3.jpeg"
+              alt="Lit confortable avec télévision et vue sur la colline"
+            />
+          </div>
+          <div class="photo">
+            <img
+              src="/assets/biens/3/4.jpeg"
+              alt="Vue extérieure du Mercury Cottage"
+            />
+          </div>
+        </div>
+        <div id="achat" class="brick">
+          <h2>Réserver ce bien</h2>
+          <h3>
+            Prix par nuit : <br /><span class="neutral-color-4">96 €</span>
+          </h3>
+          <form aria-labelledby="Réserver">
+            <div>
+              <label for="arrivee">Jour d'arrivée :</label>
+              <input
+                type="date"
+                name="arrivee"
+                id="arrivee"
+                aria-label="Sélectionner le jour d'arrivée"
+                required
+              />
+            </div>
+            <div>
+              <label for="depart">Jour de départ :</label>
+              <input
+                type="date"
+                name="depart"
+                id="depart"
+                aria-label="Sélectionner le jour de départ"
+                required
+              />
+            </div>
+            <div>
+              <a
+                href="https://www.airbnb.fr/rooms/1176263912699509201?adults=1&children=0&enable_m3_private_room=true&infants=0&pets=0&search_mode=regular_search&check_in=2024-10-06&check_out=2024-10-11&source_impression_id=p3_1728158485_P39I5yezndcrMrX2"
+                target="_blank"
+                class="cliquable aligner"
+                aria-label="Réserver via Airbnb, lien ouvrant dans une nouvelle fenêtre"
+                >Réserver</a
+              >
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div id="caracteristiques">
+        <div class="carac"><i class="fas fa-utensils"></i> Cuisine équipée</div>
+        <div class="carac"><i class="fas fa-wifi"></i> Wifi haut débit</div>
+        <div class="carac">
+          <i class="fas fa-laptop"></i> Espace de travail dédié
+        </div>
+        <div class="carac">
+          <i class="fas fa-parking"></i> Parking gratuit sur place
+        </div>
+        <div class="carac"><i class="fas fa-hot-tub"></i> Jacuzzi</div>
+        <div class="carac"><i class="fas fa-tv"></i> Télévision</div>
+        <div class="carac"><i class="fas fa-fire-alt"></i> Cheminée</div>
+      </div>
+
+      <div id="biens">
+        <h2>Biens recommandés</h2>
+        <div id="biens-grid">
+          <iframe
+            src="/pages/biens/1.html"
+            class="brick"
+            title="Détails sur le bien 1: Logement à Kecamatan Kuta, Indonésie"
+            scrolling="no"
+          ></iframe>
+          <iframe
+            src="/pages/biens/6.html"
+            class="brick"
+            title="Détails sur le bien 6: Chalet aux Tignes, France"
+            scrolling="no"
+          ></iframe>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>

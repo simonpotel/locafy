@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>locafy</title>
+    <script src="/scripts/head.js"></script>
+    <script src="/scripts/bodystruct.js"></script>
+    <link rel="stylesheet" href="/styles/pages/biens.css" />
+    <link rel="stylesheet" href="/styles/pages/biens-iframes.css" />
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <h1>
+        <a href="/pages/biens/10.html" target="_parent"
+          >Pattaya Central, Thaïlande</a
+        >
+      </h1>
+      <h2 id="prix">
+        Prix par nuit: <br /><span class="neutral-color-4">35 €</span>
+      </h2>
+      <p>
+        Découvrez l'hôtel A1 Sea View avec une vue incroyable sur la mer et une
+        piscine à débordement. Ce logement est situé à Pattaya Central, à
+        proximité de la plage, offrant une escapade relaxante et confortable.
+        <br />Le logement dispose d'une cuisine, d'une connexion wifi rapide, et
+        d'un espace de travail dédié. Vous bénéficierez également d'un parking
+        gratuit sur place. <br />Les équipements comprennent une télévision, une
+        climatisation, un lave-linge, et un sèche-cheveux pour votre confort.
+      </p>
+      <div id="landing">
+        <div id="gallerie-photos">
+          <div class="photo">
+            <img
+              src="/assets/biens/10/1.jpeg"
+              alt="Salon de l'hôtel avec vue sur la ville depuis l'intérieur."
+            />
+          </div>
+          <div class="photo">
+            <img
+              src="/assets/biens/10/2.jpeg"
+              alt="Piscine à débordement avec vue panoramique sur la mer."
+            />
+          </div>
+          <div class="photo">
+            <img
+              src="/assets/biens/10/3.jpeg"
+              alt="Cuisine de l'appartement avec vue sur la mer pendant la nuit."
+            />
+          </div>
+          <div class="photo">
+            <img
+              src="/assets/biens/10/4.jpeg"
+              alt="Salle de sport de l'hôtel équipée d'appareils modernes."
+            />
+          </div>
+        </div>
+        <div id="achat" class="brick">
+          <h2>Réserver ce bien</h2>
+          <h3>
+            Prix par nuit: <br /><span class="neutral-color-4">35 €</span>
+          </h3>
+          <form aria-labelledby="Réserver">
+            <div>
+              <label for="arrivee">Jour d'arrivée:</label>
+              <input
+                type="date"
+                name="arrivee"
+                id="arrivee"
+                required
+                aria-label="Sélectionner le jour d'arrivée"
+              />
+            </div>
+            <div>
+              <label for="depart">Jour de départ:</label>
+              <input
+                type="date"
+                name="depart"
+                id="depart"
+                required
+                aria-label="Sélectionner le jour de départ"
+              />
+            </div>
+            <div>
+              <a
+                href="https://www.airbnb.fr/rooms/1199042312051665550?adults=1&children=0&enable_m3_private_room=true&infants=0&pets=0&search_mode=regular_search&check_in=2024-10-06&check_out=2024-10-11"
+                target="_blank"
+                class="cliquable aligner"
+                aria-label="Réserver via Airbnb, lien ouvrant dans une nouvelle fenêtre"
+                >Réserver</a
+              >
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div id="caracteristiques">
+        <div class="carac">
+          <i class="fas fa-umbrella-beach"></i> Accès plage ou bord de mer
+        </div>
+        <div class="carac"><i class="fas fa-utensils"></i> Cuisine</div>
+        <div class="carac"><i class="fas fa-wifi"></i> Wifi</div>
+        <div class="carac">
+          <i class="fas fa-laptop"></i> Espace de travail dédié
+        </div>
+        <div class="carac">
+          <i class="fas fa-parking"></i> Parking gratuit sur place
+        </div>
+        <div class="carac"><i class="fas fa-swimming-pool"></i> Piscine</div>
+        <div class="carac"><i class="fas fa-tv"></i> Télévision</div>
+        <div class="carac">
+          <i class="fas fa-washing-machine"></i> Lave-linge
+        </div>
+        <div class="carac"><i class="fas fa-snowflake"></i> Climatisation</div>
+      </div>
+
+      <div id="biens">
+        <h2>Biens recommandés</h2>
+        <div id="biens-grid">
+          <iframe
+            src="/pages/biens/8.html"
+            class="brick"
+            title="Détails sur le bien 8: Appartement moderne à Khet Huai Khwang, Thaïlande"
+            scrolling="no"
+          ></iframe>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>

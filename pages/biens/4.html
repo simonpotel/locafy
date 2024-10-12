@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>locafy</title>
+    <script src="/scripts/head.js"></script>
+    <script src="/scripts/bodystruct.js"></script>
+    <link rel="stylesheet" href="/styles/pages/biens.css" />
+    <link rel="stylesheet" href="/styles/pages/biens-iframes.css" />
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <h1>
+        <a href="/pages/biens/4.html" target="_parent"
+          >Spacieuse chambre à Manhattan</a
+        >
+      </h1>
+      <h2 id="prix">
+        Prix par nuit : <br /><span class="neutral-color-4">101 €</span>
+      </h2>
+      <p>
+        Profitez de cette spacieuse et charmante chambre dotée de tout le
+        nécessaire pour un séjour confortable. <br />Avec une serrure sur la
+        porte, cette chambre garantit intimité et sécurité. <br />Cuisine,
+        espace de travail dédié et Wi-Fi pour travailler ou cuisiner à votre
+        convenance. <br />Parking gratuit dans la rue, animaux acceptés, et TV
+        HD 48 pouces pour vos moments de détente. <br />Lave-linge et
+        sèche-linge disponibles gratuitement dans le logement.
+      </p>
+      <div id="landing">
+        <div id="gallerie-photos">
+          <div class="photo">
+            <img
+              src="/assets/biens/4/1.jpeg"
+              alt="Canapé du salon avec deux bibliothèques de chaque côté"
+            />
+          </div>
+          <div class="photo">
+            <img
+              src="/assets/biens/4/2.jpeg"
+              alt="Canapé avec télévision en face dans le salon"
+            />
+          </div>
+          <div class="photo">
+            <img
+              src="/assets/biens/4/3.jpeg"
+              alt="Cuisine moderne avec une table à manger"
+            />
+          </div>
+          <div class="photo">
+            <img
+              src="/assets/biens/4/4.jpeg"
+              alt="Chambre avec un siège en cuir et une commode"
+            />
+          </div>
+        </div>
+        <div id="achat" class="brick">
+          <h2>Réserver ce bien</h2>
+          <h3>
+            Prix par nuit : <br /><span class="neutral-color-4">101 €</span>
+          </h3>
+          <form aria-labelledby="Réserver">
+            <div>
+              <label for="arrivee">Jour d'arrivée :</label>
+              <input
+                type="date"
+                name="arrivee"
+                id="arrivee"
+                aria-label="Sélectionner le jour d'arrivée"
+                required
+              />
+            </div>
+            <div>
+              <label for="depart">Jour de départ :</label>
+              <input
+                type="date"
+                name="depart"
+                id="depart"
+                aria-label="Sélectionner le jour de départ"
+                required
+              />
+            </div>
+            <div>
+              <a
+                href="https://www.airbnb.fr/rooms/52554380?adults=1&category_tag=Tag%3A8678&children=0&enable_m3_private_room=true&infants=0&pets=0&photo_id=1624558073&search_mode=regular_search&check_in=2025-01-12&check_out=2025-01-17&source_impression_id=p3_1728158815_P3RPNqzrPp7IB7VW&previous_page_section_name=1000&federated_search_id=c847ffbf-6442-47b7-bf6b-f0b56ccca0f4"
+                target="_blank"
+                class="cliquable aligner"
+                aria-label="Réserver via Airbnb, lien ouvrant dans une nouvelle fenêtre"
+                >Réserver</a
+              >
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div id="caracteristiques">
+        <div class="carac">
+          <i class="fas fa-lock"></i> Serrure sur la porte
+        </div>
+        <div class="carac"><i class="fas fa-utensils"></i> Cuisine</div>
+        <div class="carac"><i class="fas fa-wifi"></i> Wifi</div>
+        <div class="carac">
+          <i class="fas fa-laptop"></i> Espace de travail dédié
+        </div>
+        <div class="carac">
+          <i class="fas fa-parking"></i> Parking gratuit dans la rue
+        </div>
+        <div class="carac"><i class="fas fa-paw"></i> Animaux acceptés</div>
+        <div class="carac"><i class="fas fa-tv"></i> TV HD 48 pouces</div>
+        <div class="carac">
+          <i class="fas fa-video"></i> Caméras de surveillance extérieures
+        </div>
+      </div>
+
+      <div id="biens">
+        <h2>Biens recommandés</h2>
+        <div id="biens-grid">
+          <iframe
+            src="/pages/biens/2.html"
+            class="brick"
+            title="Détails sur le bien 2: Logement à Miami en Floride aux Etats-Unis"
+            scrolling="no"
+          ></iframe>
+          <iframe
+            src="/pages/biens/5.html"
+            class="brick"
+            title="Détails sur le bien 5: Penthouse à New York"
+            scrolling="no"
+          ></iframe>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>

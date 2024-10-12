@@ -1,0 +1,319 @@
+/* fichier css chargé en premier sur l'ensemble des pages */
+
+/* font outfit de google */
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+/* ensemble de la page */
+:root {
+  font-family: "Outfit", "Roboto", "sans-serif";
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-top: 2vh;
+  --color-1: #82b8e0;
+  --color-2: #447a86;
+  --color-3: #43acf0;
+  --color-4: #00d3e0;
+  --color-action: #ffd370;
+  --color-action-hover: #ffc238;
+  --color-action-clic: #ff9b3e;
+
+  --neutral-color-1: #082435;
+  --neutral-color-2: #264653;
+  --neutral-color-3: #405d68;
+  --neutral-color-4: #5b737d;
+  --neutral-color-5: #758992;
+  --neutral-color-6: #92a2a9;
+  --neutral-color-7: #b0bbc0;
+  --neutral-color-8: #cdd4d8;
+  --neutral-color-9: #eaedef;
+}
+
+/* ensemble de couleurs uniques */
+span.color-1 {
+  color: var(--color-1);
+}
+
+span.color-2 {
+  color: var(--color-2);
+}
+
+span.color-3 {
+  color: var(--color-3);
+}
+
+span.color-4 {
+  color: var(--color-4);
+}
+
+/* couleurs pour les boutons d'actions */
+
+span.color-action {
+  color: var(--color-action);
+}
+
+span.color-action-hover {
+  color: var(--color-action-hover);
+}
+
+span.color-action-clic {
+  color: var(--color-action-clic);
+}
+
+/* couleurs neutres pour les textes */
+
+span.neutral-color-1 {
+  color: var(--neutral-color-1);
+}
+
+span.neutral-color-2 {
+  color: var(--neutral-color-2);
+}
+
+span.neutral-color-3 {
+  color: var(--neutral-color-3);
+}
+
+span.neutral-color-4 {
+  color: var(--neutral-color-4);
+}
+
+/* /!/ ne pas utiliser en dessous pour un texte car ne respecte pas l'accessibilité */
+
+span.neutral-color-5 {
+  color: var(--neutral-color-5);
+}
+
+span.neutral-color-6 {
+  color: var(--neutral-color-6);
+}
+
+span.neutral-color-7 {
+  color: var(--neutral-color-7);
+}
+
+span.neutral-color-8 {
+  color: var(--neutral-color-8);
+}
+
+span.neutral-color-9 {
+  color: var(--neutral-color-9);
+}
+
+h1 {
+  color: var(--neutral-color-1);
+  font-weight: bold;
+}
+
+h2 {
+  color: var(--neutral-color-2);
+  font-weight: bold;
+}
+
+h3 {
+  color: var(--neutral-color-3);
+  font-weight: medium;
+}
+
+h4 {
+  color: var(--neutral-color-4);
+  font-weight: 400;
+}
+
+p {
+  color: var(--neutral-color-4);
+  font-weight: 300;
+}
+
+/* commun à toutes les <a> des pages */
+a {
+  text-decoration: none;
+}
+
+/* header */
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+header * {
+  color: var(--neutral-color-4);
+}
+
+/* logo locafy header */
+#header-left img {
+  width: 100px;
+  margin-top: 5px;
+}
+
+#header-center {
+  display: flex;
+  justify-content: center;
+  margin-right: 1vw;
+}
+
+header .dropbtn,
+header a {
+  font-size: 1.15rem;
+}
+
+/* button "Biens" */
+header button {
+  font-size: 1rem;
+  background-color: transparent;
+  border: 0px;
+}
+
+/* menu déroulant "Biens" */
+header .dropdown {
+  position: relative;
+  display: inline-block;
+  margin-right: -5px;
+}
+
+header .fa-chevron-down {
+  margin-top: 12.5px;
+  margin-right: 2vw;
+}
+
+header .dropbtn {
+  padding: 10px;
+}
+
+header .dropdown .fas {
+  margin-right: 10px;
+}
+
+/* contenu menu déroulant "Biens */
+header .dropdown-contenu {
+  display: none;
+  position: absolute;
+  background-color: white;
+  z-index: 1;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 13px;
+  width: 185px;
+}
+
+/* élements du menu déroulant "Biens" */
+header .dropdown-contenu a {
+  color: var(--neutral-color-1);
+  padding: 12px 16px;
+  display: block;
+}
+
+header .dropdown-contenu a:hover {
+  background-color: var(--color-action-hover);
+  color: var(--neutral-color-2);
+}
+
+header .dropdown-contenu a:active {
+  background-color: var(--color-action-clic);
+}
+
+/* affichage du menu déroulant "Biens" au layer premier */
+header .dropdown:hover .dropdown-contenu {
+  display: block;
+}
+
+/* Footer */
+footer {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+footer p {
+  color: var(--neutral-color-4);
+}
+
+.aligner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*  stylism <button> et <a> */
+.cliquable {
+  border: none;
+  color: var(--neutral-color-3);
+  background-color: var(--color-action);
+  border-radius: 8px;
+  height: 40px;
+  width: 120px;
+  font-weight: bold;
+}
+
+.cliquable:hover {
+  background-color: var(--color-action-hover);
+  color: var(--neutral-color-2);
+}
+
+.cliquable:active {
+  background-color: var(--color-action-clic);
+}
+
+input,
+textarea {
+  width: 100%;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 5px;
+}
+
+/* biens */
+.brick {
+  border-radius: 16px;
+  background-color: #f8f8f8;
+  border: 1px solid var(--neutral-color-8);
+}
+/* toutes les iframes qui ont la class brick */
+iframe.brick {
+  height: 350px;
+}
+
+#biens {
+  margin-top: 50px;
+}
+
+#biens-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  max-width: 1000px;
+}
+
+@media (max-width: 1650px) {
+  #biens-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 1300px) {
+  #biens-grid {
+    grid-template-columns: 1fr 1fr;
+    width: 50vw;
+  }
+}
+
+@media (max-width: 850px) {
+  #biens-grid iframe {
+    width: 33vw;
+  }
+}
+
+@media (max-width: 550px) {
+  #biens-grid {
+    grid-template-columns: 1fr;
+    width: 86vw;
+  }
+
+  #biens-grid iframe {
+    min-width: 250px;
+    min-height: 380px;
+    width: 70vw;
+    height: 70vw;
+  }
+
+  .brick {
+    min-width: 150px;
+  }
+}

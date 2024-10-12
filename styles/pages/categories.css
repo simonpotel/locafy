@@ -1,0 +1,27 @@
+/* espace entre le main et le header */
+main {
+  margin-top: 50px;
+}
+
+main h1 {
+  color: var(--neutral-color-3);
+}
+
+p {
+  max-width: 80vw;
+}
+
+/* illustration rectangulaire qui représente la catégorie */
+#categ-illu {
+  width: 70vw;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 13px;
+}
+
+@media (min-width: 470px) {
+  main {
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+}
