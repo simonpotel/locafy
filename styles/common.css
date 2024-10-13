@@ -12,7 +12,8 @@
   --color-1: #82b8e0;
   --color-2: #447a86;
   --color-3: #43acf0;
-  --color-4: #00d3e0;
+  --color-4: #00a1ca;
+  --color-5: #217aa1;
   --color-action: #ffd370;
   --color-action-hover: #ffc238;
   --color-action-clic: #ff9b3e;
@@ -43,6 +44,10 @@ span.color-3 {
 
 span.color-4 {
   color: var(--color-4);
+}
+
+span.color-5 {
+  color: var(--color-5);
 }
 
 /* couleurs pour les boutons d'actions */
